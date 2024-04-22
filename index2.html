@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semana 4 ejercicio 2</title>
+</head>
+<body>
+    <h2>Tablas de Multiplicar del 1 al 5</h2>
+
+<script type="text/javascript">
+    // Función para generar y mostrar la tabla de multiplicar de un número
+    function mostrarTablaMultiplicar(numero) {
+        let tabla = "<h3>Tabla del " + numero + "</h3><ul>";
+        for (let i = 1; i <= 10; i++) {
+            tabla += `<li>${numero} x ${i} = ${numero * i}</li>`;
+        }
+        tabla += "</ul>";
+        return tabla;
+    }
+
+    // Mostrar las tablas del 1 al 5
+    let tablas = "";
+    for (let j = 1; j <= 5; j++) {
+        tablas += mostrarTablaMultiplicar(j);
+    }
+
+    document.write(tablas);
+</script>
+</body>
+</html>
